@@ -1,0 +1,18 @@
+CREATE DATABASE 'proyecto_2';
+
+CREATE USER 'geografia'@'localhost' IDENTIFIED BY 'a123';
+
+GRANT ALL PRIVILEGES ON proyecto_2 . * TO 'geografia'@'localhost';
+
+
+CREATE TABLE usuarios (
+  id INT(3) auto_increment,
+  nombre VARCHAR(30) NOT NULL ,
+  apellido1 VARCHAR(30) NOT NULL ,
+  apellido2 VARCHAR(30),
+  login VARCHAR(16) NOT NULL ,
+  password VARCHAR(30) NOT NULL,
+  password2 VARCHAR(30) NOT NULL,
+  CONSTRAINT id_pk PRIMARY KEY (id),
+  CONSTRAINT login_uk UNIQUE (login)
+);

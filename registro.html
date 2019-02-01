@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.1/dist/mini-default.min.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Registro</h1>
+</header>
+
+<form action="Registro.php" method="post">
+
+    <h3>Crea una cuenta</h3>
+
+    <label for="nombre">Nombre:</label><br>
+    <input type="text" id="nombre" name="nombre" maxlength="32" required>
+    <br>
+
+    <label for="apellido1">Primer Apellido:</label><br>
+    <input type="text" id="apellido1" name="apellido1" maxlength="32" required>
+    <br>
+
+    <label for="apellido2">Segundo Apellido</label><br>
+    <input type="text" id="apellido2" name="apellido2" maxlength="32" required>
+    <br>
+
+    <label for="login">Usuario:</label><br>
+    <input type="text" id="login" name="login" maxlength="32" required>
+    <br>
+
+    <label for="pass">Password:</label><br>
+    <input type="password" id="pass" name="pass" maxlength="8" required>
+    <br>
+
+    <label for="pass2">verificar contraseña:</label><br>
+    <input type="password" id="pass2" name="pass2" maxlength="8" required>
+    <br>
+
+    <button>Registrar</button>
+    <input type="reset" name="clear" value="Borrar">
+
+</form>
+</body>
